@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DOGGY'S BONES</title>
+	<link rel="icon" href="Bone2.png">
+	<link rel="stylesheet" type="text/css" href="ESTILO.css">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Indie+Flower&family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<center>
+		<li class="hueso"><img src="REMAKE 1.png" height="120" width="120"></li>
+		<li class="dog"><img src="logo.png" height="115" width="115"></li> 
+		</center>
+		<center>
+		<nav class="nav">
+			<ul class="nav__ul"> 
+				<li class="nav__li"><i class="fas fa-home"></i><a href="index.html">Inicio</a></li>
+				<li class="nav__li"><i class="fas fa-store"></i><a href="productos.html">Productos</a></li>
+				<li class="nav__li"><i class="fas fa-bullseye"></i><a href="objetivo.html">Misión</a></li>
+				<li class="nav__li"><i class="fas fa-paw"></i><a href="cuenta.html">Contacto</a></li>
+				<button id="checkout" class="button-checkout" onclick="pay()">Pagar:</button>
+			</ul>
+			</center>
+			</ul>
+		</nav>
+	</header>
+	<br>
+	<br>
+	<div class="container-slider">
+		<div class="slider" id="slider">
+			<div class="slider__section">
+				<img src="Banner 1.png" alt="" class="slider__img">
+			</div>
+		    <div class="slider__section">
+			    <img src="Banner 3.png" alt="" class="slider__img">
+			</div>
+			<div class="slider__section">
+			    <img src="Banner 4.png" alt="" class="slider__img">
+			</div>
+			<div class="slider__section">
+			    <img src="Banner 2.png" alt="" class="slider__img">
+			</div>
+		</div>
+		<div class="slider__btn slider__btn--left"  id="btn-right">&#62;</div>
+		<div class="slider__btn slider__btn--right" id="btn-left">&#60;</div>
+	</div>
+	<script src="slide.js"></script>
+	<br>
+	<br>
+<center><h1 class="TITULO">DESCUBRE NUESTRO CATALOGO DE PRODUCTOS!</h1></center>
+        <center><div><hr size="3" color="#FF9500" width="1520"></div></center>
+<div><h2 class="textonice">Productos para tu perrito:</h2></div>
+<div class="page-nav">
+</div>
+<div class="page-content">
+	<div class="product-container">
+		<h3>Royal C - Adult Labrador Retriever X 14kg</h3>
+		<img src="primerproducto.png">
+		<h1>$391.895</h1>
+		<button class="button-add" onclick="add('Royal Canin - Adult Labrador Retriever X 14kg', 391.895)">Añadir al carrito</button>
+	</div>
+    
+    <div class="product-container">
+		<h3>Royal C - Mini Adult X 85g</h3>
+		<img src="tercerproducto.png">
+		<h1>$5.455</h1>
+		<button class="button-add" onclick="add('Royal Canin - Mini Adult X 85g', 5.455)">Añadir al carrito</button>
+	</div>
+
+    <div class="product-container">
+		<h3>Royal C - Dachshund Teckle X 4kg</h3>
+		<img src="cuartoproducto.png">
+		<h1>$98.750</h1>
+		<button class="button-add" onclick="add('Royal Canin - Dachshund Teckle X 4kg', 98.750)">Añadir al carrito</button>
+	</div>
+
+    <div class="product-container">
+		<h3>Royal C - Golden Retriever X 13.6kg</h3>
+		<img src="quintoproducto.png">
+		<h1>$324.713</h1>
+		<button class="button-add" onclick="add('Royal Canin - Golden Retriever X 13.6kg', 324.713)">Añadir al carrito</button>
+	</div>
+
+    <div class="product-container">
+		<h3>Hill's - Puppy Small Bites X 7kg</h3>
+		<img src="sextoproducto.png">
+		<h1>$231.485</h1>
+		<button class="button-add" onclick="add('Hills - Puppy Small Bites X 7kg', 231.485)">Añadir al carrito</button>
+	</div>
+    <div class="product-container">
+		<h3>Hill's - Large Breed X 13kg</h3>
+		<img src="septimoproducto.png">
+		<h1>$398.999</h1>
+		<button class="button-add" onclick="add('Hills - Large Breed X 13kg', 398.999)">Añadir al carrito</button>
+	</div>
+
+    <div class="product-container">
+		<h3>Hill's - Youthful Vitality X 6kg</h3>
+		<img src="octavoproducto.png">
+		<h1>$236.190</h1>
+		<button class="button-add" onclick="add('Hills - Youthful Vitality X 6kg', 236.190)">Añadir al carrito</button>
+	</div>
+
+    <div class="product-container">
+		<h3>Hill's - Small Paws X 2kg</h3>
+		<img src="novenoproducto.png">
+		<h1>$231.485</h1>
+		<button class="button-add" onclick="add('Hills - Small Paws X 2kg', 231.485)">Añadir al carrito</button>
+	</div>
+
+    <div class="product-container">
+		<h3>Agility Gold - Grandes Cachorros X 15kg</h3>
+		<img src="decimoproducto.png">
+		<h1><strike>$231.485</strike> - 173.613</h1>
+		<button class="button-add" onclick="add('Agility Gold - Grandes Cachorros X 15kg', 173.613)">Añadir al carrito</button> 
+	</div>
+
+    <div class="product-container">
+		<h3>Agility Gold - Piel Grandes Adultos X 8kg</h3>
+		<img src="undecimoproducto.png">
+		<h1><strike>$151.800</strike> - 113.850</h1>
+		<button class="button-add" onclick="add('Agility Gold - Piel Grandes Adultos X 8kg', 113.850)">Añadir al carrito</button>
+	</div>
+
+    <div class="product-container">
+		<h3>Agility Gold - Grandes Adultos X 15kg</h3>
+		<img src="doceavoproducto.png">
+		<h1><strike>$258.800</strike> - 193.300</h1>
+		<button class="button-add" onclick="add('Agility Gold - Grandes Adultos X 15kg', 193.300)">Añadir al carrito</button>
+	</div>
+
+	<div class="product-container">
+		<h3>Agility Gold - Premios X 1kg</h3>
+		<img src="treceavoproducto.png">
+		<h1>$67.370</h1>
+		<button class="button-add" onclick="add('Agility Gold - Premios X 1kg', 67.370)">Añadir al carrito</button>
+	</div>
+
+	<div class="product-container">
+		<h3>Barf - Pelota de Goma X 1</h3>
+		<img src="primerjuguete.png">
+		<h1>$3.050</h1>
+		<button class="button-add" onclick="add('Barf - Pelota de Goma X 1', 3.050)">Añadir al carrito </button>
+	</div>
+
+	<div class="product-container">
+		<h3>CanAmor - Bocaditos X 200gr</h3>
+		<img src="tercerjuguete.png">
+		<h1>$5.810</h1>
+		<button class="button-add" onclick="add('CanAmor - Bocaditos X 200gr', 5.810)">Añadir al carrito </button>
+	</div>
+
+    <div class="product-container">
+		<h3>Vitanagro - Figuras de goma X 1</h3>
+		<img src="cuartojuguete.png" height="303">
+		<h1>$6.150</h1>
+		<button class="button-add" onclick="add('Vitanagro - Figuras de goma X 1', 6.150)">Añadir al carrito </button>
+	</div>
+
+	<div class="product-container">
+		<h3>CanAmor - Shampoo Insecticida X 1000ml</h3>
+		<img src="quintojuguete.png" height="298">
+		<h1>$70.000</h1>
+		<button class="button-add" onclick="add('CanAmor - Shampoo Insecticida X 1000ml', 70.000)">Añadir al carrito </button>
+	</div>
+
+	<div class="product-container">
+		<h3>Becopets - Juguete de Soga X 1</h3>
+		<img src="sextojuguete.png">
+		<h1>$44.829</h1>
+		<button class="button-add" onclick="add('Becopets - Juguete de Soga X 1', 44.829)">Añadir al carrito </button>
+	</div>
+
+	<div class="product-container">
+		<h3>Predatorz Juguetes - Dogzilla X 1</h3>
+		<img src="septimojuguete.png">
+		<h1>$5.899</h1>
+		<button class="button-add" onclick="add('Predatorz Juguetes - Dogzilla X 1', 5.899)">Añadir al carrito </button>
+	</div>
+
+	<div class="product-container">
+		<h3>Becopets - Hueso de Goma X 1</h3>
+		<img src="octavojuguete.png">
+		<h1>$8.150</h1>
+		<button class="button-add" onclick="add('Becopets - Hueso de Goma X 1', 8.150)">Añadir al carrito </button>
+	</div>
+
+	<div class="product-container">
+		<h3>AnimalRed - Combo Snacks X 130gr</h3>
+		<img src="novenojuguete.png">
+		<h1>$3.845</h1>
+		<button class="button-add" onclick="add('AnimalRed - Combo Snacks X 130gr', 3.845)">Añadir al carrito </button>
+	</div>
+
+	<div class="product-container">
+		<h3>Chuncky - DeliCaprichos X 160gr</h3>
+		<img src="decimojuguete.png">
+		<h1><strike>$20.000</strike> - 16.000</h1>
+		<button class="button-add" onclick="add('Chuncky - DeliCaprichos X 160gr', 16.000)">Añadir al carrito </button>
+	</div>
+
+	<div class="product-container">
+		<h3>Purina Dentalife - Snacks Dentales X 221gr</h3>
+		<img src="undecimojuguete.png">
+		<h1><strike>$57.520</strike> - 40.345</h1>
+		<button class="button-add" onclick="add('Purina Dentalife - Snacks Dentales X 221gr', 40.345)">Añadir al carrito </button>
+	</div>
+
+	<div class="product-container">
+		<h3>Bolfo - Shampoo X 100ml</h3>
+		<img src="doceavojuguete.png">
+		<h1>$22.100</h1>
+		<button class="button-add" onclick="add('Bolfo - Shampoo X 100ml', 22.100)">Añadir al carrito </button>
+	</div>
+
+	<div class="product-container">
+		<h3>Bayer Advantix +25kg - AntiPulgas X 2.5ml</h3>
+		<img src="treceavojuguete.png">
+		<h1>$39.999</h1>
+		<button class="button-add" onclick="add('Bayer Advantix +25kg - AntiPulgas X 2.5ml', 39.999)">Añadir al carrito </button>
+	</div>
+</div>
+<center><div><hr size="3" color="#FF9500" width="1520"></div></center>
+<div><h2 class="textonice">Productos para tu gatito:</h2></div>
+<div class="page-nav">
+</div>
+<div class="page-content">
+
+<div class="product-container">
+	<h3>Royal Canin - Appetite Control Care X 10kg</h3>
+	<img src="catorceavoproducto.png" height="300">
+	<h1>$998.985</h1>
+	<button class="button-add" onclick="add('Royal Canin - Appetite Control Care X 10kg', 998.985)">Añadir al carrito</button>
+</div>
+
+<div class="product-container">
+	<h3>Royal Canin - Indoor Adult X 2kg</h3>
+	<img src="quinceavoproducto.png">
+	<h1>$102.999</h1>
+	<button class="button-add" onclick="add('Royal Canin - Indoor Adult X 2kg', 102.999)">Añadir al carrito</button>
+</div>
+
+<div class="product-container">
+	<h3>Royal Canin - Hairball X 3kg</h3>
+	<img src="dieciseisavoproducto.png">
+	<h1>$138.990</h1>
+	<button class="button-add" onclick="add('Royal Canin - Hairball X 3kg', 138.990)">Añadir al carrito</button>
+</div>
+
+<div class="product-container">
+	<h3>Royal Canin - Persian X 10kg</h3>
+	<img src="diecisieteavoproducto.png" height="300px">
+	<h1>$478.590</h1>
+	<button class="button-add" onclick="add('Royal Canin - Persian X 10kg', 478.590)">Añadir al carrito</button>
+</div>
+
+<div class="product-container">
+	<h3>Hill's - Adult 1-6 X 2kg</h3>
+	<img src="dieciochoavoproducto.png" height="300px">
+	<h1>$164.250</h1>
+	<button class="button-add" onclick="add('Hills - Adult 1-6 X 2kg', 164.250)">Añadir al carrito</button>
+</div>
+
+<div class="product-container">
+	<h3>Hill's - Young Adult Sterilised Cat X 2kg</h3>
+	<img src="diecinueveavoproducto.png" height="300px">
+	<h1>$87.360</h1>
+	<button class="button-add" onclick="add('Royal Canin - Persian X 10kg', 478.590)">Añadir al carrito</button>
+</div>
+
+<div class="product-container">
+	<h3>Hills - Science Diet Kitten X 3.1kg</h3>
+	<img src="segundoproducto.png">
+	<h1>$120.199</h1>
+	<button class="button-add" onclick="add('Hills - Science Diet Kitten X 3.1kg', 120.199)">Añadir al carrito</button>
+</div>
+
+<div class="product-container">
+	<h3>Hills - Felino Sensitive X 1.6kg</h3>
+	<img src="productoveinte.png">
+	<h1><strike>85.500</strike> - 68.400</h1>
+	<button class="button-add" onclick="add('Hills - Felino Sensitive X 1.6kg', 120.199)">Añadir al carrito</button>
+</div>
+
+<div class="product-container">
+	<h3>Diamond Naturals - Perro Adulto X 18kg</h3>
+	<img src="productoveintiuno.png">
+	<h1>$250.740</h1>
+	<button class="button-add" onclick="add('Diamond Naturals - Perro Adulto X 18kg', 250.740)">Añadir al carrito</button>
+</div>
+
+<div class="product-container">
+	<h3>Diamond Naturals - Gato Activo X 6.1kg</h3>
+	<img src="productoveintidos.png">
+	<h1>$197.700</h1>
+	<button class="button-add" onclick="add('Diamond Naturals - Gato Activo X 6.1kg', 197.700)">Añadir al carrito</button>
+</div>
+
+<div class="product-container">
+	<h3>Chunky - Pollo / Cordero X 8kg</h3>
+	<img src="productoveintitres.png">
+	<h1>$109.750</h1>
+	<button class="button-add" onclick="add('Chunky - Pollo / Cordero X 8kg', 109.750)">Añadir al carrito</button>
+</div>
+
+<div class="product-container">
+	<h3>Chunky - Pollo X 8kg</h3>
+	<img src="productoveinticuatro.png">
+	<h1>$77.915</h1>
+	<button class="button-add" onclick="add('Chunky - Pollo X 8kg', 77.915)">Añadir al carrito</button>
+</div>
+
+<div class="product-container">
+	<h3>Mirringo - Adultos X 8kg</h3>
+	<img src="productoveinticinco.png">
+	<h1>$70.200</h1>
+	<button class="button-add" onclick="add('Mirringo - Adultos X 8kg', 70.200)">Añadir al carrito</button>
+</div>
+
+<div class="product-container">
+	<h3>Mirringo - Gaticos X 1kg</h3>
+	<img src="productoveintiseis.png">
+	<h1>$9.850</h1>
+	<button class="button-add" onclick="add('Mirringo - Gaticos X 1kg', 9.850)">Añadir al carrito</button>
+</div>
+
+<div class="product-container">
+	<h3>Fancy Pets - Juguete Raton Mini X 1</h3>
+	<img src="segundojuguete.png">
+	<h1>$6.789</h1>
+	<button class="button-add" onclick="add('Fancy Pets - Juguete Raton Mini X 1', 6.789)">Añadir al carrito</button>
+</div>
+
+<div class="product-container">
+	<h3>Novaventa - Rueda para Gatos X 1</h3>
+	<img src="catorceavojuguete.png">
+	<h1>$20.500</h1>
+	<button class="button-add" onclick="add('Novaventa - Rueda para Gatos X 1', 20.500)">Añadir al carrito</button>
+</div>
+
+<div class="product-container">
+	<h3>Green Cat - Pasto Gatuno X 1</h3>
+	<img src="quinceavojuguete.png">
+	<h1>$19.890</h1>
+	<button class="button-add" onclick="add('Green Cat - Pasto Gatuno X 1', 19.890)">Añadir al carrito</button>
+</div>
+
+<div class="product-container">
+	<h3>Yongebeño - Bolas plasticas con Yute X 1</h3>
+	<img src="dieciseisavojuguete.png">
+	<h1>$12.065</h1>
+	<button class="button-add" onclick="add('Yongebeño - Bolas plasticas con Yute X 1', 12.065)">Añadir al carrito</button>
+</div>
+
+<div class="product-container">
+	<h3>Sound - Bolas de Goma X 1</h3>
+	<img src="diecisieteavojuguete.png">
+	<h1>$5.810</h1>
+	<button class="button-add" onclick="add('Sound - Bolas de Goma X 1', 5.810)">Añadir al carrito</button>
+</div>
+
+<div class="product-container">
+	<h3>Cosmic Catnip - Bolos X 1</h3>
+	<img src="dieciochoavojuguete.png">
+	<h1>$21.800</h1>
+	<button class="button-add" onclick="add('Cosmic Catnip - Bolos X 1', 21.800)">Añadir al carrito</button>
+</div>
+
+<div class="product-container">
+	<h3>Hartz - Mini Mice Trio X 1</h3>
+	<img src="diecinueveavojuguete.png">
+	<h1>$15.780</h1>
+	<button class="button-add" onclick="add('Hartz - Mini Mice Trio X 1', 15.780)">Añadir al carrito</button>
+</div>
+
+<div class="product-container">
+	<h3>Cosmic Catnip - Torre Interactiva X 1</h3>
+	<img src="jugueteveinte.png">
+	<h1>$28.700</h1>
+	<button class="button-add" onclick="add('Cosmic Catnip - Torre Interactiva X 1', 28.700)">Añadir al carrito</button>
+</div>
+
+<div class="product-container">
+	<h3>Fruitables - Tasty SuperFood Salmon X 1</h3>
+	<img src="jugueteveintiuno.png">
+	<h1>$15.300</h1>
+	<button class="button-add" onclick="add('Fruitables - Tasty SuperFood Salmon X 1', 15.300)">Añadir al carrito</button>
+</div>
+
+<div class="product-container">
+	<h3>Fruitables - Tasty SuperFood Chicken X 1</h3>
+	<img src="jugueteveintidos.png">
+	<h1>$15.300</h1>
+	<button class="button-add" onclick="add('Fruitables - Tasty SuperFood Chicken X 1', 15.300)">Añadir al carrito</button>
+</div>
+</div>
+<br>
+<br>
+<footer class="pie-pagina">
+	<div class="grupo-1">
+		<div class="box">
+			<figure>
+				<a href="#">
+					<img src="Logo Remake.png" alt="Logo de Doggy's Bones">
+				</a>
+			</figure>
+		</div>
+		<div class="box">
+			<h2>SOBRE NOSOTROS</h2>
+			<p> Somos un grupo de estudiantes de grado undecimo, cuyo objetivo es proporcionar a los dueños de perros y gatos, productos de alta calidad a precios realmente bajos (Mas informacion de nuestra misión en el apartado de MISIÓN en la barra de navegación).
+				 Somos: Juan Sebastian Morales Herrera, Felipe Mogollon Vargas y Tomas Arutro Rincon Sandoval del curso 11C del Colegio CAFAM, esperamos la pagina sea de tu agrado y te ayude a consentir a tu adorable mascota con nuestras distintas categorias de productos!!</p>
+		</div>
+		<div class="box">
+			<h2>CONTACTANOS</h2>
+			<div class="red-social">
+				<a href="https://wa.me/message/XBVGTQYDBENZE1" target="_blank" class="fa fa-whatsapp"></a>
+				<a href="https://www.instagram.com/invites/contact/?i=o9tbnyz3h23g&utm_content=pbai554" target="_blank" class="fa fa-instagram"></a>
+				<a href="https://t.me/Doggys_Bones" target="_blank" class="fa fa-telegram"></a>
+			</div>
+		</div>
+	</div>
+	<div class="grupo-2">
+		<small>&copy; 2022 <b>Doggy's Bones</b> - Todos los Derechos Reservados.</small>
+	</div>
+</footer>
+</body>
+</html>
